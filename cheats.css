@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #111;
+}
+
+.header {
+    width: 100%;
+    height: 110px;
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+#exit {
+    width: 80px;
+    height: 60px;
+    font-size: 40px;
+    background: red;
+    border: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 6px;
+}
+
+#exit:hover {
+    background-color: rgb(111, 52, 52);
+    color: gray;
+}
+
+/* ⭐ ENG MUHIM FIX */
+.cheat-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 50px auto;
+    margin-top: 40px;
+    display: grid;
+
+    /* FIX: AUTO-FIT MUAMMOSI YO‘Q */
+    grid-template-columns: repeat(3, 260px);
+
+    justify-content: center;
+    gap: 20px;
+}
+
+/* CARD */
+.cheat-card {
+    width: 260px;
+    height: 130px;
+    background: #1f1f1f;
+    border: 1px solid dimgray;
+    border-radius: 12px;
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+}
+
+.cheat-card:hover {
+    transform: scale(1.1);
+}
+
+.cheat-info {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 12px;
+    color: #aaa;
+}
+
+.cheat-code {
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.copy-btn {
+    position: absolute;
+    right: 10px;
+    background: transparent;
+    border: none;
+    color: whitesmoke;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.copy-btn:hover {
+    color: lightgray;
+}
+
+#platform {
+    width: 250px;
+    height: 45px;
+    font-size: 18px;
+    padding: 5px 10px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+header h1 {
+    color: whi;
+}
+
+.function {
+    width: 100%;
+    max-width: 900px;
+    margin: 30px auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.function::before,
+.function::after {
+    content: "";
+    flex: 1;
+    height: 2px;
+    background: white;
+}
+
+.function span {
+    padding: 0 20px;
+}
+
+.function {
+    position: relative;
+    z-index: 10;
+}
+
+.function {
+    grid-column: 1 / -1;
+}
+.gtav-page {
+    background-image: url("gtav.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.gtasanandreas-page {
+    background-image: url("gtasanandreas.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.gtavicecity-page {
+    background-image: url("gtavicecity.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.gtai-page {
+    background-image: url("gtai.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.gtaiii-page {
+    background-image: url("gtaiii.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.gtaiv-page {
+    background-image: url("gtaiv.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.gtalondon-page {
+    background-image: url("gtalondon.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+@media (max-width: 1024px) {
+    .cheat-container {
+        grid-template-columns: repeat(2, 260px);
+    }
+}
+
+@media (max-width: 768px) {
+
+    .header {
+        height: auto;
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+        text-align: center;
+    }
+
+    #exit {
+        width: 70px;
+        height: 50px;
+        font-size: 30px;
+    }
+
+    #platform {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    .function {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .cheat-container {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .cheat-card {
+        width: 100%;
+        height: 120px;
+    }
+
+    .cheat-code {
+        font-size: 14px;
+        white-space: normal; 
+        padding: 0 10px;
+    }
+
+    .copy-btn {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .header h1 {
+        font-size: 18px;
+    }
+
+    #exit {
+        width: 60px;
+        height: 45px;
+        font-size: 26px;
+    }
+
+    .cheat-info {
+        font-size: 10px;
+    }
+
+    .cheat-code {
+        font-size: 13px;
+    }
+}

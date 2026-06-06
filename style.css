@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FF5F1F;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    max-width: 1270px;
+    margin: auto;
+    height: 110px;
+    background-color: purple;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logoimg {
+    width: 120px;
+    height: 100px;
+    margin-left: 10px;
+}
+
+.logotxt {
+    color: white;
+    font-size: 40px;
+    margin-left: 10px;
+}
+
+.terms ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin-right: 20px;
+}
+
+.terms li {
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.terms li:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.gtaversions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 0;
+}
+
+.gtav,
+.gtavicecity,
+.gtasanandreas,
+.gtaiv,
+.gtalibertycity,
+.gtaiii,
+.gtavicecitystories,
+.gtachinatown,
+.gtaii,
+.gtai,
+.gtalondon,
+.gtaadvance {
+    width: 1000px;
+    height: 100px;
+    background-color: #1e1e1e;
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    transition: 0.3s;
+}
+
+.gtav img,
+.gtavicecity img,
+.gtasanandreas img,
+.gtaiv img,
+.gtalibertycity img,
+.gtaiii img,
+.gtavicecitystories img,
+.gtachinatown img,
+.gtaii img,
+.gtai img,
+.gtalondon img,
+.gtaadvance img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.gtav ul,
+.gtavicecity ul,
+.gtasanandreas ul,
+.gtaiv ul,
+.gtalibertycity ul,
+.gtaiii ul,
+.gtavicecitystories ul,
+.gtachinatown ul,
+.gtaii ul,
+.gtai ul,
+.gtalondon ul,
+.gtaadvance ul {
+    color: white;
+    font-size: 60px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.gtav:hover,
+.gtavicecity:hover,
+.gtasanandreas:hover,
+.gtaiv:hover,
+.gtalibertycity:hover,
+.gtaiii:hover,
+.gtavicecitystories:hover,
+.gtachinatown:hover,
+.gtaii:hover,
+.gtai:hover,
+.gtalondon:hover,
+.gtaadvance:hover {
+    transform: scale(1.05);
+}
+
+.footer {
+    width: 100%;
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
+
+.footer p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.social a {
+    color: white;
+    font-size: 22px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social a:hover {
+    color: #00ffcc;
+}
+
+.created h1{
+    color: white;
+    font-size: 15px;
+}
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .logoimg {
+        width: 80px;
+        height: 70px;
+    }
+
+    .logotxt {
+        font-size: 25px;
+        margin-left: 0;
+    }
+
+    .terms ul {
+        flex-direction: column;
+        gap: 10px;
+        margin: 10px 0;
+        padding: 0;
+    }
+
+    .terms li {
+        font-size: 18px;
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 8px 12px;
+        border-radius: 10px;
+    }
+
+    .gtav,
+    .gtavicecity,
+    .gtasanandreas,
+    .gtaiv,
+    .gtalibertycity,
+    .gtaiii,
+    .gtavicecitystories,
+    .gtachinatown,
+    .gtaii,
+    .gtai,
+    .gtalondon,
+    .gtaadvance {
+        width: 95%;
+        height: auto;
+        flex-direction: row;
+        padding: 10px;
+    }
+
+    .gtav img,
+    .gtavicecity img,
+    .gtasanandreas img,
+    .gtaiv img,
+    .gtalibertycity img,
+    .gtaiii img,
+    .gtavicecitystories img,
+    .gtachinatown img,
+    .gtaii img,
+    .gtai img,
+    .gtalondon img,
+    .gtaadvance img {
+        width: 90px;
+        height: 70px;
+    }
+
+    .gtav ul,
+    .gtavicecity ul,
+    .gtasanandreas ul,
+    .gtaiv ul,
+    .gtalibertycity ul,
+    .gtaiii ul,
+    .gtavicecitystories ul,
+    .gtachinatown ul,
+    .gtaii ul,
+    .gtai ul,
+    .gtalondon ul,
+    .gtaadvance ul {
+        font-size: 20px;
+    }
+
+ 
+    .footer {
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    .social a {
+        font-size: 18px;
+    }
+}
